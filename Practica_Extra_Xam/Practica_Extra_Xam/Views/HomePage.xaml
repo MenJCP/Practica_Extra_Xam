@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_Extra_Xam.Views.HomePage"
+             xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+              mvvm:ViewModelLocator.AutowireViewModel="True">
+    <ContentPage.Content>
+        
+        <StackLayout>
+
+            <StackLayout BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
+                <Image Source="{Binding basketball.Image}"/>
+                <Label Text="{Binding basketball.Title}"/>
+
+                <Image Source="{Binding baseball.Image}"/>
+                <Label Text="{Binding baseball.Title}"/>
+
+                <Image Source="{Binding soccer.Image}"/>
+                <Label Text="{Binding soccer.Title}"/>
+
+                <Image Source="{Binding tennis.Image}"/>
+                <Label Text="{Binding tennis.Title}"/>
+            </StackLayout>
+            
+            <StackLayout  Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                <Image Source="{Binding monte.Image}"/>
+                <Label Text="{Binding monte.Title}"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Vertical" VerticalOptions="End">
+                <Label Text="News"/>
+            </StackLayout>
+            
+            <StackLayout BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand">
+            
+            <Image Source="{Binding HomeMenuOption.Image}"/>
+             <Label Text="{Binding HomeMenuOption.Title}"/>
+
+            <Image Source="{Binding Ubicacion.Image}"/>
+            <Label Text="{Binding Ubicacion.Title}"/>
+
+            <Image Source="{Binding bus.Image}"/>
+            <Label Text="{Binding bus.Title}"/>
+
+            <Image Source="{Binding globo.Image}"/>
+            <Label Text="{Binding globo.Title}"/>
+
+            <Image Source="{Binding maleta.Image}"/>
+            <Label Text="{Binding maleta.Title}"/>
+
+            <Image Source="{Binding mapa.Image}"/>
+            <Label Text="{Binding mapa.Title}"/>
+        </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

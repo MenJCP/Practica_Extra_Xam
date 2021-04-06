@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:home="clr-namespace:Practica_Extra_Xam.Views"
+             x:Class="Practica_Extra_Xam.Views.HomeTabbed">
+  <!--Pages can be added as references or inline-->
+  <home:HomePage Title="Home" />
+  <ContentPage Title="Tab 2" />
+  <ContentPage Title="Tab 3" />
+</TabbedPage>
